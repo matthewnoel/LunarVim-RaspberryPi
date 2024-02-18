@@ -1,9 +1,5 @@
 # Installing LunarVim on Raspberry Pi 4
 
-Tested with ARMv7 (06/19/2022)
-
-![image](https://user-images.githubusercontent.com/23065167/174519568-08b45e19-a64d-41bb-818e-5a86433d046e.png)
-
 1. Install Rust:
 
     `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
@@ -77,6 +73,11 @@ Tested with ARMv7 (06/19/2022)
 
       `sudo rm -r /usr/local/share/nvim/`
 
-8. Finally, install LunarVim ("Install In One Command!" ---my ass):
+8. Install LunarVim
 
     `bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)`
+
+9. Install NerdFonts
+
+    `mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf && fc-cache -f -v`
+
